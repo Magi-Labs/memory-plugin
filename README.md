@@ -1,8 +1,10 @@
 # Memory Plugin
 
+**Companion repository:** [Memory](https://github.com/Magi-Labs/memory) — deploy the personal memory server, dashboard, and MCP gateway used by this plugin.
+
 One personal memory workflow across agents and devices. Remember useful facts, retrieve relevant context, and continue work from versioned handoffs.
 
-Companion to [Magi Labs Memory](https://github.com/Magi-Labs/memory). Point it at your own deployment. The shared skill has no fixed hostname, model provider, or agent dependency.
+Point it at your own deployment. The shared skill has no fixed hostname, model provider, or agent dependency.
 
 ## Install
 
