@@ -9,10 +9,12 @@
 
 For clients using URL interpolation, set the non-secret `MEMORY_MCP_URL` to the full endpoint. Desktop apps may not inherit terminal variables: configure the environment/secret store used by the actual app process. Preserve a working secret-store helper if already configured.
 
-The repository is private. Sign in to GitHub with an account that can read it. If an agent's marketplace cannot authenticate to GitHub, use an authenticated clone and the local install path:
+The [product website](https://magi-labs.github.io/memory/) describes Memory and links its setup guides. It is a static landing page; use your deployment's MCP endpoint for agent connections.
+
+The plugin repository is public. If using a local install instead of a marketplace, clone it without repository credentials:
 
 ```bash
-gh repo clone Magi-Labs/memory-plugin
+git clone https://github.com/Magi-Labs/memory-plugin.git
 cd memory-plugin
 ```
 
@@ -48,11 +50,11 @@ If you already have a working memory connection, install only the shared skill: 
 
 ## Hermes
 
-From an authenticated clone, copy the `skills/shared-memory` directory into the active Hermes profile's `skills/` directory. For the default profile this is normally `~/.hermes/skills/shared-memory`. If that directory already exists, review the changes before updating it. Keep the whole directory, including `references/`.
+From a local clone, copy the `skills/shared-memory` directory into the active Hermes profile's `skills/` directory. For the default profile this is normally `~/.hermes/skills/shared-memory`. If that directory already exists, review the changes before updating it. Keep the whole directory, including `references/`.
 
 Merge [adapters/hermes.yaml](../adapters/hermes.yaml) into that profile's `config.yaml`. Merge under the existing `mcp_servers` key rather than adding a duplicate YAML key. Set `MEMORY_MCP_URL` and `MEMORY_MCP_TOKEN` in the active profile's secret environment or process environment. Restart/reconnect Hermes and select `shared-memory` when needed.
 
-Hermes also supports GitHub skill taps. A local clone is the documented path here because this repo is private and remote tap authentication depends on the user's installation.
+Hermes also supports GitHub skill taps. This guide retains the local-clone installation path; remote tap installation has not been exercised for this package.
 
 ## Other agents
 

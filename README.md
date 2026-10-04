@@ -1,5 +1,7 @@
 # Memory Plugin
 
+[Product website](https://magi-labs.github.io/memory/)
+
 [Memory](https://github.com/Magi-Labs/memory) — deploy the personal memory server, dashboard, and MCP gateway used by this plugin.
 
 ----
@@ -34,7 +36,7 @@ For Claude Code, inside the client:
 /plugin install memory-plugin@magi-memory
 ```
 
-Then follow [connection setup](docs/install.md). This repository is private; cloning and marketplace installation require GitHub access. Other agents can use an authenticated local clone of `skills/shared-memory/` without a plugin marketplace.
+Then follow [connection setup](docs/install.md). This repository is public. Other agents can use a local clone of `skills/shared-memory/` without a plugin marketplace. Access to your memory server still requires its own client credential.
 
 ## Use it
 
@@ -67,4 +69,4 @@ The portable package intentionally leaves MCP authentication to the host. Agent 
 
 ## Status
 
-Version 0.1.0. Authored against the existing gateway source and official client documentation. Client installs, authenticated tool discovery, and memory mutation flows have **not** been exercised for this release. No automated tests were run. See [maintenance and sources](docs/maintenance.md).
+Version 0.1.1. The metadata update links the product website and documents public installation. The workflow was authored against the existing gateway source and official client documentation. Client installs, authenticated tool discovery, and memory mutation flows have **not** been exercised for this release. No automated tests were run. See [maintenance and sources](docs/maintenance.md).

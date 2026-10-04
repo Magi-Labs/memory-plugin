@@ -1,6 +1,6 @@
 {
   "name": "memory-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shared personal memory and versioned task handoffs across agents and devices.",
   "author": { "name": "Magi Labs" },
   "skills": "./skills/",

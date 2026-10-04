@@ -15,10 +15,17 @@ Keep `plugin.json`, `.codex-plugin/plugin.json`, and `.claude-plugin/plugin.json
 Create a distributable archive from committed files, outside the repository, including hidden manifests:
 
 ```bash
-git archive --format=zip --prefix=memory-plugin/ --output=../memory-plugin-0.1.0.zip HEAD
+git archive --format=zip --prefix=memory-plugin/ --output=../memory-plugin-0.1.1.zip HEAD
 ```
 
-Use a reviewed commit/tag for distribution. Do not archive the working directory, client secrets, or caches. A private source repository/archive is separate from a public plugin-directory submission.
+Use a reviewed commit/tag for distribution. Do not archive the working directory, client secrets, or caches. This public GitHub repository is separate from a plugin-directory submission.
+
+## Release 0.1.1 — 5 October 2026
+
+- Product homepage and README links use `https://magi-labs.github.io/memory/`.
+- Installation docs now reflect the public repository and offer unauthenticated Git cloning.
+- All three plugin manifest versions are synchronized. MCP endpoint templates and credential configuration retain their existing deployment-specific behavior.
+- No automated tests, manifest validators, client installations or connection flows were run for this metadata/documentation update.
 
 ## Release 0.1.0 evidence
 
