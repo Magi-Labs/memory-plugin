@@ -1,0 +1,14 @@
+{
+  "name": "memory-plugin",
+  "version": "0.1.0",
+  "description": "Shared personal memory and versioned task handoffs across agents and devices.",
+  "author": { "name": "Magi Labs" },
+  "repository": "https://github.com/Magi-Labs/memory-plugin",
+  "mcpServers": {
+    "personal-memory": {
+      "type": "http",
+      "url": "${MEMORY_MCP_URL}",
+      "headers": { "Authorization": "Bearer ${MEMORY_MCP_TOKEN}" }
+    }
+  }
+}

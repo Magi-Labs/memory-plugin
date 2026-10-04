@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "memory-plugin",
+  "version": "0.1.0",
+  "description": "Shared personal memory and versioned task handoffs across agents and devices.",
+  "author": { "name": "Magi Labs" },
+  "repository": "https://github.com/Magi-Labs/memory-plugin",
+  "homepage": "https://github.com/Magi-Labs/memory-plugin#readme",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Memory by Magi Labs",
+        "shortDescription": "Context across your agents",
+        "longDescription": "Remember useful personal facts and resume work from versioned handoffs using your own authenticated memory MCP server. Configure the server separately in your agent.",
+        "developerName": "Magi Labs",
+        "category": "Productivity",
+        "defaultPrompt": "Use my shared memory to resume the current project."
+      }
+    }
+  }
+}

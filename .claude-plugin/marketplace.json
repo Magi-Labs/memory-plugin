@@ -1,0 +1,11 @@
+{
+  "name": "magi-memory",
+  "owner": { "name": "Magi Labs" },
+  "plugins": [
+    {
+      "name": "memory-plugin",
+      "source": "./",
+      "description": "Shared personal memory and task handoffs for your agents."
+    }
+  ]
+}

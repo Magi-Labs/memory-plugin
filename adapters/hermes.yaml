@@ -1,0 +1,8 @@
+# Merge under the existing mcp_servers key in the active profile's config.yaml.
+mcp_servers:
+  personal-memory:
+    url: "${MEMORY_MCP_URL}"
+    headers:
+      Authorization: "Bearer ${MEMORY_MCP_TOKEN}"
+    timeout: 150
+    connect_timeout: 30

@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+.DS_Store
+__pycache__/
+*.pyc
+dist/
+*.zip
+*.tar.gz
+*.db
+*.sqlite*
+*.pem
+*.key
+local/

@@ -1,0 +1,8 @@
+# Merge this table into the active Codex config; retain unrelated configuration.
+# Replace the URL with your own endpoint. Keep the trailing /mcp/ path.
+[mcp_servers.personal-memory]
+url = "https://memory.example.com/mcp/"
+bearer_token_env_var = "MEMORY_MCP_TOKEN"
+startup_timeout_sec = 30
+tool_timeout_sec = 150
+enabled = true
